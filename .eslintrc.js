@@ -1,0 +1,41 @@
+module.exports = {
+    env: {
+        es6: true,
+        browser: true,
+        node: true,
+    },
+    extends: 'airbnb-base',
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
+    },
+    parserOptions: {
+        experimentalObjectRestSpread: true,
+        ecmaVersion: 2018,
+        sourceType: 'module',
+    },
+    rules: {
+        indent: ['error', 4],
+        'global-require': 'off',
+        'no-underscore-dangle': 'off',
+        'import/no-dynamic-require': 'off',
+        'no-unused-vars': 'error',
+        'prefer-destructuring': 'off',
+        'no-param-reassign': 'off',
+        'no-console': ['error'],
+        'no-continue': 'off',
+        'no-await-in-loop': 'off',
+        'implicit-arrow-linebreak': 'off',
+        'consistent-return': 'off',
+        'operator-linebreak': 'off',
+        'max-classes-per-file': 'off',
+        'no-unused-expressions': 'off',
+        'function-paren-newline': 'off',
+        'object-curly-newline': 'off',
+        'linebreak-style': 'off',
+        camelcase: [
+            'error',
+            { properties: 'never', ignoreDestructuring: true },
+        ],
+    },
+};
