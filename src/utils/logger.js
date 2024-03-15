@@ -64,7 +64,7 @@
     const logger = winston.createLogger({
     levels: logLevels,
     level: process.env.LOG_LEVEL || 'info' || 'error',
-    transports: [consoleTransport, fileTransport], // Use separate transports for console and file
+    transports: [consoleTransport], // Use separate transports for console and file
     });
 
     module.exports = logger;
