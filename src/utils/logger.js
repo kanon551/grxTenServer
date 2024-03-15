@@ -36,30 +36,30 @@
     printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
     );
 
-    const fileFormat = combine(
-    timestamp({ format: 'DD/MM/YYYY, hh:mm:ss.SSS A' }),
-    align(),
-    printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
-    );
+//     const fileFormat = combine(
+//     timestamp({ format: 'DD/MM/YYYY, hh:mm:ss.SSS A' }),
+//     align(),
+//     printf((info) => `${info.timestamp} ${info.level}: ${info.message}`)
+//     );
 
     const consoleTransport = new winston.transports.Console({
     format: consoleFormat,
     });
 
 
-    const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-    const day = String(currentDate.getDate()).padStart(2, '0');
-    const DATE = `${year}-${month}-${day}`;
+//     const currentDate = new Date();
+//     const year = currentDate.getFullYear();
+//     const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+//     const day = String(currentDate.getDate()).padStart(2, '0');
+//     const DATE = `${year}-${month}-${day}`;
 
-    const fileTransport = new winston.transports.File({
-    filename: `grx10serverLogs/server/${DATE}.log`,
-    format: fileFormat,
-    maxSize: '40m',
-    maxFiles: '30d',
-    // zippedArchive: true,
-    });
+//     const fileTransport = new winston.transports.File({
+//     filename: `grx10serverLogs/server/${DATE}.log`,
+//     format: fileFormat,
+//     maxSize: '40m',
+//     maxFiles: '30d',
+//     // zippedArchive: true,
+//     });
 
     const logger = winston.createLogger({
     levels: logLevels,
