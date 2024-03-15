@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "node template with exceptions, project structure and error handlers",
   "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "start": "nodemon index.js",
     "dev": "nodemon index.js",
