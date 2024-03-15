@@ -54,7 +54,7 @@
     const DATE = `${year}-${month}-${day}`;
 
     const fileTransport = new winston.transports.File({
-    filename: `${__dirname}/../grx10serverLogs/server/${DATE}.log`,
+    filename: `grx10serverLogs/server/${DATE}.log`,
     format: fileFormat,
     maxSize: '40m',
     maxFiles: '30d',
