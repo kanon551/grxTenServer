@@ -2,18 +2,12 @@
 We want to test you end-end to software development skills, so we want you to build a solar calculator for Bengaluru region.  
 
 # Technical Aspects
-1. React
-2. Typescript
-3. Material-ui
-4. Styled-components
-5. Axios
-6. notistack
-7. React-error-boundary
-8. Express
-9. node-fetch
-10. Error Handlings
-11. Loggers
-12. Custom Exceptions
+1. Node js
+2. Express
+3. node-fetch
+4. Error Handlings
+5. Loggers
+6. Custom Exceptions
  
 
 # Assignment Deadline : 18th March 10 AM 
